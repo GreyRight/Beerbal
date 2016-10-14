@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Beerbal
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./base.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 100%;
+            background-color: #f2f8da;
+            border: 1px solid #ccc;
+            height: 60px;
+        }
+
+        h1 {
+            text-align: left;
+            padding-left: 100px;
+            color: white;
+            font-size: 35px;
+            line-height: 1;
+            font-family: verdana;
+            font-weight: normal;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            background-image: url("./img/bg1.png");
+            background-color: orchid;
+            background-blend-mode: difference;
+            margin: 0px;
+        }
+
+        h3 {
+            float: left;
+            margin-right: 44px;
+            color: rgb(51, 51, 51);
+            font-family: verdana;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        fieldset {
+            border: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 250px;
+            height: 27px;
+            border: 1px solid #ccc;
+        }
+
+            input[type='text'], input[type='password'] {
+                padding-left: 10px;
+                font-size: 16px;
+                color: #555;
+            }
+
+        label {
+            font-family: verdana;
+            font-size: 14px;
+            padding-right: 15px;
+            display: block;
+            padding-bottom: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function showhide(obj,dv)
+        {
+            var d = document.getElementById(dv);
+            
+            if (obj.value == "+") {
+                d.style.display = "block";
+                obj.value = "-";
+            }
+            else {
+                d.style.display = "none";
+                obj.value = "+";
+            }
+        }
+    </script>
+</head>
+<body style="">
+    <h1> Beerbal </h1>
+    <form>
+        <h3 style="margin-left: 100px;font-weight:bold;">Home</h3>
+        <h3 style="cursor:pointer;" onclick="window.location.href='./myRequests.html'">My Requests</h3>
+        <h3 style="cursor:pointer;" onclick="window.location.href='./request.html'">Submit a request</h3>
+        <a onclick="window.location.href='./index.html'" style="float: right;margin-top: 14px;cursor: pointer;margin-right: 15px;">Log out</a>
+    </form>
+
+    <div class='container'>
+        <div class='left'>
+
+            <h4>Our Panalists</h4>
+            <div style="height:100px;border: 1px solid #ccc;padding-left: 40px;padding-right: 40px;border-radius: 21px;">
+                <div style="float:left; width:10%;">
+                    <p style="vertical-align:middle; font:13">
+                        <img src="./img/User_ring.png" height="50px" width="50px" />
+                    </p>
+                </div>
+                <div style="float:right;height:100px; width:80%;">
+                    <p style="vertical-align:middle; font-size:13px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+            </div>
+            <br /> 
+            <h4>FAQ's</h4>
+            <div style="border: 1px solid #ccc;padding-left: 40px;padding-right: 40px;border-radius: 21px;">
+                <p>
+                    
+                <p style="font-size:13px;">
+                    <input type="button" value="+" style="width:10px" onclick="showhide(this, 'q1');" />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    <div id="q1" style="display:none;">
+                <p style="font-size:13px;">
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <p style="font-size:13px;">
+                <input type="button" value="+" style="width:10px" onclick="showhide(this, 'q2');" />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                <div id="q2" style="display:none;">
+            <p style="font-size:13px;">
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+        </div>
+            </p>
+            </p>
+        </div>
+    </div>
+    <div class='right'>
+        <div style="border: 1px solid #ccc;padding-left: 40px;padding-right: 40px;border-radius: 21px;">
+
+
+            <div>
+                <h5>Success Stories</h5>
+                <p style="font-size:13px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+                    <br><br>
+                    <button onclick="window.location.href='./request.html'">Write to us</button>
+                </p>
+            </div>
+            <div>
+                <h5>Problem in writing</h5>
+                <p style="font-size:13px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+                    <br><br>
+                    <button onclick="window.location.href='./request.html'">Upload your voice</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
